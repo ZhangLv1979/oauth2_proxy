@@ -15,7 +15,7 @@ ENV OAUTH2_PROXY_VERSION 2.2
 # RUN echo "http://mirrors.aliyun.com/alpine/v3.8/main/" > /etc/apk/repositories
 RUN apk add --no-cache --virtual=build-dependencies ca-certificates git
 # Checkout bitly's latest google-auth-proxy code from Github
-RUN go get gihub.com/bitly/oauth2_proxy
+RUN go get github.com/bitly/oauth2_proxy
 
 # Expose the ports we need and setup the ENTRYPOINT w/ the default argument
 # to be pass in.
